@@ -1,7 +1,7 @@
 #SumIdsApp
 
 Quick implemenation of app that will: "Given a JSON string which describes a menu, calculate the SUM of the IDs of all "items", as long as a "label" exists for that item."
-The command line app reads in a file path that must contain a json string that matches the menu described above.
+The command line app reads in a file path that must contain a json string that matches the menu described below.
 
 ##Sample Json string
 
