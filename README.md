@@ -3,48 +3,50 @@
 Quick implemenation of app that will: "Given a JSON string which describes a menu, calculate the SUM of the IDs of all "items", as long as a "label" exists for that item."
 The command line app reads in a file path that must contain a json string that matches the menu described above.
 
-###Sample Json string
-[
-  {
-     "menu":{
-        "header":"menu",
-        "items":[
-           {
-              "id":8,
-			  "label":"Some Label"
-           }
-        ]
-     }
-  },
-  {
-     "menu":{
-        "header":"menu",
-        "items":[
+##Sample Json string
 
-           {
+```javascript
 
-              "id":23,
+[{
+        "menu": {
+            "header": "menu",
+            "items": [{
+                "id": 8,
+                "label": "Some Label"
+            }]
+        }
+    },
+    {
+        "menu": {
+            "header": "menu",
+            "items": [
 
-              "label":"Some more Labels"
+                {
 
-           },
-           {
+                    "id": 23,
 
-              "id":19,
+                    "label": "Some more Labels"
 
-              "label":"Some other label"
+                },
+                {
 
-           },
+                    "id": 19,
 
-           {
+                    "label": "Some other label"
 
-              "id": 45
+                },
 
-           }
-        ]
-     }
-  }
+                {
+
+                    "id": 45
+
+                }
+            ]
+        }
+    }
 ]
+
+```
 
 The above should return:
 8
