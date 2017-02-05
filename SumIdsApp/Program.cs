@@ -35,7 +35,7 @@ namespace SumIdsApp
                     break;
                 }
             }
-
+            //If Load data returned true then we allow calculate sums to process the file and print the result
             if (hasAnswer)
             {
                 sums = HelperMethods.CalculateSums(ro);
